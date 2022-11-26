@@ -78,7 +78,7 @@ def pregunta_03():
     # Divida los datos de entrenamiento y prueba. Los conjuntos de datos están
     # estratificados. La semilla del generador de números aleatorios es 42.
     X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size = 0.5, random_state = 123, stratify = y
+        X, y, test_size = 0.2, random_state = 42, stratify = y
     )
 
     # Inicialice los arreglos para almacenar la precisión para las muestras de
