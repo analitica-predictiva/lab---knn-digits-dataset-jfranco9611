@@ -40,7 +40,7 @@ def pregunta_02():
     digits = datasets.load_digits(n_class = 10, return_X_y = False)
 
     # Cree los vectors de características y de salida
-    X = digits.data.reshape((n_samples, -1))
+    X = digits.data.reshape(len(digits.images), -1)
     y = digits.target
 
     # Divida los datos de entrenamiento y prueba. Los conjuntos de datos están
